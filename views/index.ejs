@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest-API Estudiantes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+        <h1>Rest-API Estudiantes</h1>
+        <p>API muy simple para obtener información sobre estudiantes.</p>
+
+        <table>
+            <tr>
+              <th>Tipo</th>
+              <th>Endpoint</th>
+              <th>Descripción</th>
+            </tr>
+            <tr>
+              <td id="type" style="color: green;font-weight:600">GET</td>
+              <td><a href="/api/estudiantes" style="color: black;font-weight:500;">/api/estudiantes/</a></td>
+              <td>Obten toda la información sobre todos los estudiantes.</td>
+            </tr>
+            <tr>
+              <td id="type" style="color: green;font-weight:600">GET</td>
+              <td><a href="/api/estudiantes/1" style="color: black;font-weight:500;">/api/estudiantes/:id</a></td>
+              <td>Obten información especifica del estudiante. ID desde 1 al 5.</td>
+            </tr>
+            <tr>
+              <td id="type" style="color: green;font-weight:600">GET</td>
+              <td><a href="/api/estudiantes/random" style="color: black;font-weight:500;">/api/estudiantes/random</a></td>
+              <td>Obten información sobre un estudiante al azar..</td>
+            </tr>
+          </table>
+          <h3>Hecho por <a href="https://github.com/nachodeluka">nachodeluka</a></h3>
+    </center>
+</body>
+<style>
+h1 {
+    font-weight: bold;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 30%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</html>
